@@ -17,3 +17,7 @@ class ThemeManager {
         return this.theme
     }
  }
+
+ const themeManager = new ThemeManager(); // Create an instance
+ Object.freeze(themeManager); // prevent further modification
+ export default themeManager; // Export the instance

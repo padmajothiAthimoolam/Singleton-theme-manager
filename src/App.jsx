@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import themeManager from './themeManager';
 import './app.css';
 
-const app = () => {
-  const [theme, setTheme ] = useState(theme);
+const App = () => {
+  const [theme, setTheme ] = useState(themeManager.getTheme());
 
   useEffect(() => {
     document.body.className = theme;
